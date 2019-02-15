@@ -1,0 +1,14 @@
+
+
+/* ==========================================================================
+   Transition
+   ========================================================================== */
+
+/* @include transition(all,2s,ease-out); */
+@mixin transition($what: all, $time: 0.35s, $how: cubic-bezier(.35, 0, .1, 1)) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}
